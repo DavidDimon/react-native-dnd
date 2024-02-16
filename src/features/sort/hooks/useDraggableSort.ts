@@ -49,10 +49,10 @@ export const useDraggableSort = ({
       if (itemId === activeId) {
         continue;
       }
-      if (!layouts[itemId]) {
-        console.warn(`Unexpected missing layout ${itemId} in layouts!`);
-        continue;
-      }
+      // if (!layouts[itemId]) {
+      //   console.warn(`Unexpected missing layout ${itemId} in layouts!`);
+      //   continue;
+      // }
       const itemLayout = applyOffset(layouts[itemId].value, {
         x: offsets[itemId].x.value,
         y: offsets[itemId].y.value,
